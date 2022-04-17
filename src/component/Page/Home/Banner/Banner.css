@@ -1,0 +1,40 @@
+
+.slider-caption {
+  top: 15%;
+  left: 20%;
+  text-align: start;
+  color: black;
+}
+.slider-caption h1 {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 60px;
+}
+.slider-caption p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+.btn-one {
+  background-color: #18BA60;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: ease-in 0.3ms;
+}
+.btn-two {
+  background-color: #454C50;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 500;
+  transition: ease-in 0.3ms;
+}
+.btn-two:hover{
+  background-color: #18BA60;
+  color: #fff;
+}
