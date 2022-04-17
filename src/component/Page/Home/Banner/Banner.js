@@ -7,7 +7,7 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="slider-area">
+    <div id="home" className="slider-area">
       <Carousel fade>
         <Carousel.Item className="position-relative">
           <img className="img-fluid" src={banner1} alt="First slide" />
