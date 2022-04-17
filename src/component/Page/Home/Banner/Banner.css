@@ -25,7 +25,7 @@
   color: #fff;
   font-weight: 500;
   margin-right: 15px;
-  transition: ease-in 0.3ms;
+  transition: ease-in-out 0.3ms;
 }
 .btn-two {
   background-color: #454C50;

@@ -1,0 +1,44 @@
+[
+ {
+   "id":"01",
+   "name":"Accumulation",
+   "introduction":"engage worldwide methodologies with web-enabled technology.",
+   "price":"299",
+   "img":"https://media.istockphoto.com/photos/beautiful-young-smiling-asian-woman-working-on-laptop-and-drinking-picture-id1124867063?b=1&k=20&m=1124867063&s=170667a&w=0&h=r1IvEEGNM8mLJ2KCmfIWLxMYRpajsXM55kzjbHK-dvA="
+ },
+ {
+   "id":"02",
+   "name":"Mutual Funds",
+   "introduction":"Completely pursue scalable customer service through sustainable potentialities.",
+   "price":"499",
+   "img":"https://media.istockphoto.com/photos/young-woman-who-uses-the-computer-in-a-room-picture-id599778514?k=20&m=599778514&s=612x612&w=0&h=u0_ousMDoTBhYRGexKpj_4SvAW5kUGkFSzAyjNVtOW4="
+ },
+ {
+   "id":"03",
+   "name":"Risk Management",
+   "introduction":"Collaboratively administrate turnkey channels whereas virtual e-tailers.",
+   "price":"799",
+   "img":"https://images.unsplash.com/photo-1648737153811-69a6d8c528bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+ },
+ {
+   "id":"04",
+   "name":"Estate Planning",
+   "introduction":"Seamlessly empower fully researched growth strategies and interoperable internal.",
+   "price":"1299",
+   "img":"https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+ },
+ {
+   "id":"05",
+   "name":"Retirement Planning",
+   "introduction":"Dramatically maintain clicks-and-mortar solutions without functional solutions.",
+   "price":"599",
+   "img":"https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bW9uZXl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+ },
+ {
+   "id":"06",
+   "name":"Business Planning",
+   "introduction":"Efficiently enable enabled sources and cost effective products.",
+   "price":"999",
+   "img":"https://img.freepik.com/free-photo/smart-beautiful-asian-woman-hand-hold-pick-house-paper-model-saving-insurance-business-ideas-concept_609648-1932.jpg?t=st=1650195253~exp=1650195853~hmac=c806612cdfd83269257ba7136dadd748e844a6c98a756bb13310027512e4993a&w=740"
+ }
+]
