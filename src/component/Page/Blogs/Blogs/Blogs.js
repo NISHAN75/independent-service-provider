@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { TiArrowForwardOutline } from "react-icons/ti";
 
 const Blogs = () => {
@@ -55,9 +55,39 @@ const Blogs = () => {
             <p>
               Firebase Authentication makes it easier to get your users
               signed-in without having to understand the complexities behind
-              implementing your own authentication system.It supports
+              implementing our own authentication system.It supports
               authentication using passwords, phone numbers, popular federated
               identity providers like Google, Facebook and Twitter, and more.
+            </p>
+          </div>
+          <div className="q-info">
+            <p style={{ color: "#18BA60" }}>
+              <TiArrowForwardOutline /> What other options do you have to
+              implement authentication?
+            </p>
+            <p>
+              I have to Implement authentication <br />
+              1.a password or personal identification number (PIN);
+              <br />
+              2.something you have: a token, such as bank card;
+              <br />
+              3.something you are: biometrics, such as fingerprints and voice
+              recognition.
+            </p>
+          </div>
+        </div>
+        <div className="q-area">
+          <h5 style={{ color: "#18BA60" }}>
+            (C) What other services does firebase provide other than authentication?
+          </h5>
+          <div className="q-info">
+            <p>
+              Yes,there are many services which Firebase provides ,most useful of us:<br/>
+              1.Hosting.<br/>
+              2.Cloud Storage.<br/>
+              3.Predictions.<br/>
+              4.Cloud Messaging.<br/>
+              5.Cloud Functions.<br/>
             </p>
           </div>
         </div>
