@@ -10,6 +10,7 @@ import CheckOut from './component/Page/CheckOut/CheckOut';
 import NotFound from './component/Page/NotFound/NotFound';
 import Booking from './component/Page/Login/Booking/Booking';
 import RequireAuth from './component/Page/Login/RequireAuth/RequireAuth';
+import Blogs from './component/Page/Blogs/Blogs/Blogs';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>} ></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/services/:servicesId' element={<CheckOut></CheckOut>}></Route>
         <Route path='/login' element={<Login></Login>} ></Route>
         <Route path='/register' element={<Register></Register>}></Route>

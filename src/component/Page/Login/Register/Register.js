@@ -7,7 +7,6 @@ import { useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init'
 import Loading from "../../Share/Loading/Loading";
 import { useUpdateProfile } from 'react-firebase-hooks/auth';
-import { toast, ToastContainer } from "react-toastify";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
 
@@ -48,9 +47,9 @@ const Register = () => {
      await createUserWithEmailAndPassword(email,password);
      if(email){
       await sendEmailVerification();
-      alert('Sent email');
+      alert('sent email');
       await updateProfile({ displayName:name});
-      alert('Updated profile');
+      alert('Updated Profile');
      }
       
   }
@@ -88,9 +87,7 @@ const Register = () => {
           Submit
         </Button>
       </Form>
-      <SocialLogin></SocialLogin>
-      <ToastContainer></ToastContainer>
-      
+      <SocialLogin></SocialLogin>    
     </div>
   );
 };
