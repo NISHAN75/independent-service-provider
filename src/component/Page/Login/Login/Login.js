@@ -1,31 +1,33 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from 'react-toastify';
 import auth from "../../../../firebase.init";
-import Loading from "../../Share/Loadding/Loading";
+import Loading from "../../Share/Loading/Loading";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
+  const location=useLocation();
+  let from = location.state?.from?.pathname || "/";
   const [signInWithEmailAndPassword, user, loading, logInError] =
     useSignInWithEmailAndPassword(auth);
   const [sendPasswordResetEmail, sending, resetError] =
     useSendPasswordResetEmail(auth);
   let errorElement;
   if(user){
-    navigate('/home')
+    navigate(from, { replace: true });
   }
   if(loading ||  sending){
     return <Loading></Loading>
   }
   if(logInError || resetError){
-    errorElement=<p>Error: {logInError?.message} {resetError?.message}</p>
+    errorElement=<p className="text-danger">Error: {logInError?.message} {resetError?.message}</p>
   }
 
   const handleLogin = (event) => {
@@ -35,13 +37,13 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
 
-  const handleReset = async () => {
+  const handleReset = async() => {
     const email = emailRef.current.value;
-    if (email) {
       await sendPasswordResetEmail(email);
-      toast("Sent email");
-    }
+      alert('send Email')
+      toast('send Email')
   };
+ 
 
   return (
     <div className="mx-auto w-50 mt-5">
@@ -96,7 +98,9 @@ const Login = () => {
         <Button className="btn btn-two w-50 mx-auto d-block" type="submit">
           Login
         </Button>
-        <ToastContainer></ToastContainer>
+        <ToastContainer />
+        <SocialLogin></SocialLogin>
+        
       </Form>
     </div>
   );
