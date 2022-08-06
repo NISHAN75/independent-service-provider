@@ -17,6 +17,7 @@ import About from './component/Page/About/About';
 
 
 
+
 function App() {
   return (
     <div>
@@ -37,7 +38,7 @@ function App() {
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-
+     
       
     </div>
   );
